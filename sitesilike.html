@@ -7,15 +7,51 @@
          <style>
         body {background-image: url('https://files.1-background.com/images/stars-1/starry-night-star-seamless-background.jpg');
             background-repeat: repeat;}
+         .navbar {background-color:black ; border: 2px; border-style: solid; border-color:darkslateblue;}
+            
+        .section{padding: 10px 10px 10px 10px;}
+
+        .layout{display:grid; grid-template-columns: 0.5fr 2fr; grid-auto-rows: max-content; grid-template-areas: 'nav''title''content'; gap: 10px;}
+            
+        .title{max-width: page;}
+
+        .content{background-color:black; border: 2px; border-style: solid; border-color:darkgoldenrod;}
         </style>
+
        
 
     </head>
-    
-    <body>
-    <center>
+
+<body>  
+    <header>
+        <center>
         <h1 style="color:cornflowerblue">Here's some sites I like</h1>
         <h3 style="color:cornflowerblue">(in no particular order)</h3>
+        </center>
+    </header>
+
+    <div class="section layout">
+
+
+    <aside class="section navbar">
+        <h2 style="color:cornflowerblue">Navigation</h2>
+
+    <nav>
+        <p style="color:cornflowerblue">
+
+        <a href="index.html" style="color:cornflowerblue">Home</a><br>
+        <a href="sitesilike.html" style="color:cornflowerblue">Sites I like</a><br>
+        My Cd Collection<br>
+        Sources<br>
+
+        </p>
+    
+    </nav>
+    </aside>
+
+    <aside class="section content">
+        <p style="color:cornflowerblue">Section 1: useful ones</p>
+    
         <ul>
             <li><a style="color:lightskyblue" href="https://www.mybib.com/" target="_blank">My Bib (formats sources without any ads)</a></li>
             <li><a style="color:lightskyblue" href="https://spotdownloader.com/" target="_blank">Spotify to mp3 (i would <b>never</b> burn a cd and <b>never</b> download any mp3 music <b>at all</b>)</a></li>
@@ -24,7 +60,11 @@
 
 
 
-        </ul>
-    </center>
-        
-    </body>
+        </ul> 
+
+    </aside>
+</body>
+</html>
+
+
+
